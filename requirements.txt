@@ -4,3 +4,4 @@ flask-executor
 contextvars
 flask_shell2http
 voluptuous
+opencv-python-headless
