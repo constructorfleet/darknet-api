@@ -17,4 +17,4 @@ COPY demo.py .
 
 RUN pip3 install -r requirements.txt && which python3
 
-CMD ['/usr/bin/python3', 'app.py']
+CMD '/usr/bin/python3 app.py''
