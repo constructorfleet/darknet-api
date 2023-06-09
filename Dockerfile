@@ -1,4 +1,5 @@
 ARG BASE_IMAGE=daisukekobayashi/darknet:gpu-cv
+FROM $BASE_IMAGE
 ENV DEBIAN_FRONTEND noninteractive
 ARG SERVER_FONFIG
 ENV SERVER_CONFIG ${SERVER_CONFIG:-./config.py}
