@@ -5,9 +5,9 @@ ARG SERVER_FONFIG
 ENV SERVER_CONFIG ${SERVER_CONFIG:-./config.py}
 
 RUN apt update \
-    && apt install python3 python3-dev \
-        python3-pip python-highgui \
-        vim wget curl wget
+    && apt search opencv-highgui | grep opencv-highgui | apt install -y - \
+    && apt install -y python3 python3-dev \
+        python3-pip vim wget curl wget
 
 WORKDIR /config
 
