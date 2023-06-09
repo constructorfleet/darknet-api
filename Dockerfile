@@ -15,6 +15,6 @@ COPY requirements.txt .
 COPY app.py .
 COPY demo.py .
 
-RUN pip3 install -r requirements.txt
+RUN pip3 install -r requirements.txt && which python3
 
 CMD ['python3', 'app.py']
