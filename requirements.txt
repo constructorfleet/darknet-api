@@ -1,0 +1,6 @@
+flask>=1.0.0
+blinker
+flask-executor
+contextvars
+flask_shell2http
+voluptuous
